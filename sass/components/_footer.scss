@@ -2,10 +2,24 @@
     background-color:#FFF5F6;
 }
 .footer-container{
+    width: 100%;
+    min-width: 320px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    @media screen and (min-width: 772px) {
+        width: 770px;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-bottom: 32px;
+    }
+    @media screen and (min-width: 1280px) {
+    width: 1280px;
+    padding-left: 115px;
+    padding-right: 115px;
+    padding-bottom: 32px;
+    }
    
 }
 
@@ -78,6 +92,10 @@
    border-radius: 50%;
    width: 34px;
    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
    &:not(:last-child){
     margin-right: 25px;

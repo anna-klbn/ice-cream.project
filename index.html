@@ -14,84 +14,134 @@
     <header class="header"></header>
     <main>
       <section class="products-section">
-        <div>
-          <p class="products-section__name">100% natural</p>
-          <h2 class="products-section__title">products</h2>
+        <div class="products-container">
+          <div class="products-title-container">
+            <p class="products-section__name">100% natural</p>
+            <h2 class="products-section__title">products</h2>
+          </div>
+
           <ul class="products-section__list">
             <li class="products-section__item products-section__item--ice">
+              <img
+                src="./images/home-pic1.png"
+                alt="strawberry ice cream"
+                class="products-section__img"
+              />
               <h3 class="products-section__type">ice cream</h3>
               <p class="products-section__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et
+                eiusmod tempor incididunt ut labore et. dolore magna aliqua
+                facilisis.
               </p>
-              <button class="products-section__button"></button>
+              <button class="products-section__button">→</button>
             </li>
             <li class="products-section__item products-section__item--coffee">
+              <img
+                src="./images/home-pic2.png"
+                alt="ice coffee"
+                class="products-section__img"
+              />
               <h3 class="products-section__type">ice coffee</h3>
               <p class="products-section__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et
+                eiusmod tempor incididunt ut labore et. dolore magna aliqua
+                facilisis.
               </p>
-              <button class="products-section__button"></button>
+              <button class="products-section__button">→</button>
             </li>
             <li
               class="products-section__item products-section__item--milkshakes"
             >
+              <img
+                src="./images/home-pic3.png"
+                alt="milkshakes"
+                class="products-section__img"
+              />
               <h3 class="products-section__type">milkshakes</h3>
               <p class="products-section__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et
+                eiusmod tempor incididunt ut labore et. dolore magna aliqua
+                facilisis.
               </p>
-              <button class="products-section__button"></button>
+              <button class="products-section__button">→</button>
             </li>
           </ul>
         </div>
       </section>
       <section class="made-section">
-        <div>
-          <p class="made-section__texxt">tradition and love</p>
-          <h2 class="made-section__title">how it’s made?</h2>
-          <p class="made-section__first-text">
-            Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
-            justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend
-            erat at justo fringilla.
-          </p>
-          <p class="made-section__second-text">
-            Curabitur lacinia enim at ex blandit, vel pellentesque odio
-            elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
-            euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras
-            massa nibh, tincidunt. Aliquam erat volutpat. Aenean accumsan.
-          </p>
-          <button class="made-section__button">
-            Read more
-            <svg width="5px" height="8px">
-              <use></use>
-            </svg>
-          </button>
+        <div class="made-container">
+          <div class="title-container">
+            <p class="made-section__texxt">tradition and love</p>
+            <h2 class="made-section__title">how it’s made?</h2>
+            <div class="img-container">
+              <img
+                srcset="
+                  ./images/cow.png    1x,
+                  ./images/cow@2x.png 2x,
+                  ./images/cow@3x.png 3x
+                "
+                alt="cow"
+                class="made-section_cow"
+              />
+              <div class="texxt-container">
+                <p class="made-section__first-text">
+                  Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam
+                  vel justo cursus, faucibus lorem eget, egestas eros. Maecenas
+                  eleifend erat at justo fringilla.
+                </p>
+                <p class="made-section__second-text">
+                  Curabitur lacinia enim at ex blandit, vel pellentesque odio
+                  elementum. Mauris rhoncus orci in imperdiet placerat.
+                  Vestibulum euismod nisl suscipit ligula volutpat, a feugiat
+                  urna maximus. Cras massa nibh, tincidunt.
+                  <span>Aliquam erat volutpat. Aenean accumsan.</span>
+                </p>
+                <button class="made-section__button">
+                  Read more
+                  <svg width="5px" height="8px">
+                    <use></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
           <div>
             <ul class="made-section__list">
               <li class="made-section__item">
-                <svg width="33px" height="50px">
-                  <use></use>
-                </svg>
+                <img
+                  src="./images/icon1.png"
+                  alt="milk bucket"
+                  width="33px"
+                  height="50px"
+                  class="made-section__img"
+                />
                 <h3 class="made-section__number">721</h3>
                 <p class="made-section__text">
                   Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
                 </p>
               </li>
               <li class="made-section__item">
-                <svg width="50px" height="50px">
-                  <use></use>
-                </svg>
+                <img
+                  src="./images/icon2.png"
+                  alt="bucket of apples"
+                  width="50px"
+                  height="50px"
+                  class="made-section__img"
+                />
                 <h3 class="made-section__number">16kg</h3>
                 <p class="made-section__text">
                   Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
                 </p>
               </li>
               <li class="made-section__item">
-                <svg width="44px" height="50px">
-                  <use></use>
-                </svg>
+                <img
+                  src="./images/icon3.png"
+                  alt="ice-cream"
+                  width="44px"
+                  height="50px"
+                  class="made-section__img"
+                />
                 <h3 class="made-section__number">84</h3>
                 <p class="made-section__text">
                   Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
@@ -213,13 +263,13 @@
             <button class="contacts__button">
               Our Locations
               <svg width="5px" height="8px">
-                <use></use>
+                <use href="./images/sprite.svg#icon-arrow"></use>
               </svg>
             </button>
             <button class="contacts__button second">
               Franchise
               <svg width="5px" height="8px">
-                <use></use>
+                <use href="./images/sprite.svg#icon-arrow"></use>
               </svg>
             </button>
           </div>
@@ -239,21 +289,21 @@
                 <li class="networks-item">
                   <a class="networks-link" href="https://github.com/">
                     <svg class="networks-icon" width="20px" height="20px">
-                      <use></use>
+                      <use href="./images/sprite.svg#icon-github"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="networks-item">
                   <a class="networks-link" href="https://web.telegram.org/a/">
                     <svg class="networks-icon" width="20px" height="20px">
-                      <use></use>
+                      <use href="./images/sprite.svg#icon-telegram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="networks-item">
                   <a class="networks-link" href="https://www.facebook.com/">
                     <svg class="networks-icon" width="20px" height="20px">
-                      <use></use>
+                      <use href="./images/sprite.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
