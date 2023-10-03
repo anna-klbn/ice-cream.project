@@ -1,0 +1,78 @@
+.title{
+    font-family: Titan One;
+    font-weight: 400;
+    text-transform: uppercase;
+
+
+
+}
+.title-products{
+    @media screen and (min-width: 768px) {
+        margin-bottom: 150px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 265px;
+    }
+}
+.title-made{
+    text-align: center;
+    margin-bottom: 26px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 50px;
+    }
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 55px;
+    }
+}
+.title-footer{
+    font-family: Titan One;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 43px;
+        width: 234px;
+    }
+    @media screen and (min-width: 768px) {
+        max-width: 340px;
+        }
+    @media screen and (min-width: 1280px) {
+        max-width: 480px;
+    }
+
+}
+
+.title-first {
+    font-size: 18px;
+    line-height: 20.61px;
+    color: #FFA5BA;
+    margin-bottom: 16px;
+    
+    @media screen and (min-width: 768px) {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 30px;
+        line-height: 34px;
+    }  
+}
+
+.title-second {
+    font-size: 34px;
+    line-height: 38.93px;
+    letter-spacing: 0.06em;
+    color: #D41443;
+
+    @media screen and (min-width: 768px) {
+        font-size: 48px;
+        line-height: 54.96px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 58px;
+        line-height: 66px;
+    }
+}

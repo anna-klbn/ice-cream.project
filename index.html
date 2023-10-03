@@ -11,13 +11,59 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header"></header>
+    <header class="header">
+      <div class="header-container">
+        <a>
+          <img src="./images/logo.png" href="index.html" />
+        </a>
+        <button
+          type="button"
+          class="button-menu"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg class="menu-svg" width="24px" height="16px" aria-label="menu">
+            <use href="./images/sprite.svg#icon-close" class="icon-close"></use>
+            <use href="./images/sprite.svg#icon-burger" class="icon-menu"></use>
+          </svg>
+        </button>
+        <div class="menu-container" data-menu id="menu-container">
+          <nav class="site-nav">
+            <ul class="site-nav__list">
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="index.html">Home</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="#">About us</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="#">How it’s made?</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="#">Our products</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <button class="header-button">
+          Buy now
+          <svg width="5px" height="8px">
+            <use href="./images/sprite.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
     <main>
       <section class="products-section">
         <div class="products-container">
-          <div class="products-title-container">
-            <p class="products-section__name">100% natural</p>
-            <h2 class="products-section__title">products</h2>
+          <div class="title title-products">
+            <p class="title-first">100% natural</p>
+            <h2 class="title-second">products</h2>
           </div>
 
           <ul class="products-section__list">
@@ -70,9 +116,12 @@
       </section>
       <section class="made-section">
         <div class="made-container">
-          <div class="title-container">
-            <p class="made-section__texxt">tradition and love</p>
-            <h2 class="made-section__title">how it’s made?</h2>
+          <div class="owerlay">
+            <div class="title title-made">
+              <p class="title-first">tradition and love</p>
+              <h2 class="title-second">how it’s made?</h2>
+            </div>
+
             <div class="img-container">
               <img
                 srcset="
@@ -260,15 +309,15 @@
             </li>
           </ul>
           <div class="contacts-section__btn">
-            <button class="contacts__button">
+            <button class="contacts__button contacts__button-first">
               Our Locations
-              <svg width="5px" height="8px">
-                <use href="./images/sprite.svg#icon-arrow"></use>
+              <svg width="5px" height="8px" class="contacts-section__svg">
+                <use href="./images/sprite.svg#icon-arrow "></use>
               </svg>
             </button>
-            <button class="contacts__button second">
+            <button class="contacts__button contacts__button-second">
               Franchise
-              <svg width="5px" height="8px">
+              <svg width="5px" height="8px" class="contacts-section__svg">
                 <use href="./images/sprite.svg#icon-arrow"></use>
               </svg>
             </button>
@@ -279,9 +328,9 @@
     <footer class="footer">
       <div class="footer-container">
         <div class="container-desktop">
-          <div class="footer-title">
-            <p class="footer-title__first">homemade ice cream made</p>
-            <p class="footer-title__second">with passion</p>
+          <div class="title title-footer">
+            <p class="title-first">homemade ice cream made</p>
+            <p class="title-second">with passion</p>
           </div>
           <div class="desktop-container">
             <div class="networks-container">
@@ -320,5 +369,7 @@
         <p class="footer-copyright">© 2019 - IceCream. All Rights Reserved.</p>
       </div>
     </footer>
+    <script src="./js/menu-scroll.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
