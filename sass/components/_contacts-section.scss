@@ -125,7 +125,9 @@
     }
 }
 
-.contacts-day__list::after{
+.contacts-day__list{
+
+    &::after{
     position: absolute;
     content: '';
     width: 180px;
@@ -140,6 +142,7 @@
         bottom: 26%;
         width: 280px;
          }
+}
 }
 .contacts-day__list{
 
