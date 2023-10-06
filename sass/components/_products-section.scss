@@ -53,23 +53,21 @@
     
     &:not(:last-child){
         @media screen and (max-width: 767px) {
-    margin-bottom: 256px;
+    margin-bottom: 200px;
     }
-    }
-    &:not(:last-child) {
     @media screen and (min-width: 768px) {
         margin-right: 20px;
         }
     }
 
     &--ice{
-    background-color: #FFA5BA;
+    background-color: $pink-card-color;
     }
     &--coffee{
-    background-color:#F0D1A5;
+    background-color:$milky-card-color;
     }
     &--milkshakes{
-    background-color: #C2E297;
+    background-color: $green-card-color;
     }
 }
 .products-section__img{
@@ -99,7 +97,7 @@ font-family: Titan One;
     text-transform: uppercase;
     
 
-    color: #fff;
+    color: $primary-white-color;
     @media screen and (min-width: 1280px) {
         font-size: 30px;
         line-height: 34px;
@@ -116,13 +114,13 @@ font-family: Titan One;
 }
 
 .products-section__text{
-    font-family: DM Sans;
+    
     font-size: 14px;
     font-weight: 700;
     line-height: 22px;
     letter-spacing: 0.04em;
      
-    color: #fff;
+    color: $primary-white-color;
 
     margin-bottom: 30px;
     @media screen and (min-width: 1280px) {
@@ -133,11 +131,11 @@ font-family: Titan One;
 .products-section__button{
     width: 40px; 
     height: 40px;
-    background-color: #fff;
+    background-color: $primary-white-color;
     border-radius: 50%;
     border: 0;
 
-    color: #D41443;
+    color: $second-title-color;
     font-size: 20px;
     font-weight: 700;
 }

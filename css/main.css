@@ -12,6 +12,7 @@ html {
 
 body {
   margin: 0;
+  font-family: DM Sans;
   font-style: normal;
   letter-spacing: 0.04em;
 }
@@ -32,6 +33,13 @@ h3,
 p {
   margin: 0;
   padding: 0;
+}
+
+.contacts-container, .made-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .header {
@@ -144,6 +152,10 @@ p {
   display: none;
 }
 
+.menu-container.is-open {
+  display: flex;
+}
+
 .button-menu.is-open {
   position: absolute;
   z-index: 5;
@@ -151,21 +163,16 @@ p {
   right: 15px;
 }
 
-.menu-container.is-open {
-  display: flex;
-}
-
 .header-button {
   padding: 10px 37px;
   border: 0;
   border-radius: 22px;
-  font-family: DM Sans;
   font-size: 16px;
   font-weight: 700;
   line-height: 21px;
   letter-spacing: 0em;
   text-align: center;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   color: #D41443;
 }
 @media screen and (max-width: 767px) {
@@ -185,11 +192,13 @@ p {
     margin-left: 110px;
   }
 }
+.header-button:hover, .header-button:focus {
+  background-color: #ECEBEB;
+}
 
 .site-nav__list {
-  font-family: DM Sans;
   letter-spacing: 0em;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 @media screen and (min-width: 768px) {
   .site-nav__list {
@@ -225,6 +234,9 @@ p {
   color: #ffffff;
 }
 .site-nav__link:hover, .site-nav__link:focus {
+  color: #D41443;
+}
+.site-nav__link--active {
   color: #D41443;
 }
 
@@ -337,13 +349,12 @@ p {
 }
 
 .first-blok__button {
-  font-family: DM Sans;
   font-size: 8px;
   font-weight: 700;
   line-height: 11px;
   letter-spacing: 0em;
   text-align: center;
-  background-color: #D41342;
+  background-color: #D41443;
   border-radius: 20px;
   border: 0px;
   color: #FFFFFF;
@@ -356,10 +367,16 @@ p {
     font-size: 14px;
   }
 }
+.first-blok__button:hover, .first-blok__button:focus {
+  background-color: #C7133E;
+}
 
 .first-blok__button-second {
   background-color: #FFFFFF;
-  color: #D41342;
+  color: #D41443;
+}
+.first-blok__button-second:hover, .first-blok__button-second:focus {
+  background-color: #ECEBEB;
 }
 
 @media screen and (max-width: 767px) {
@@ -382,7 +399,6 @@ p {
 }
 
 .first-blok__text {
-  font-family: DM Sans;
   font-size: 8px;
   font-weight: 400;
   line-height: 12px;
@@ -448,8 +464,8 @@ p {
 .circle {
   position: relative;
   border-radius: 50%;
-  border: solid #ffa5ba;
-  background-color: #ffa5ba;
+  border: solid #FFA5BA;
+  background-color: #FFA5BA;
 }
 @media screen and (max-width: 767px) {
   .circle {
@@ -514,7 +530,6 @@ p {
 }
 
 .third-blok__institution {
-  font-family: DM Sans;
   font-size: 8px;
   font-weight: 400;
   line-height: 10px;
@@ -716,7 +731,7 @@ p {
 }
 @media screen and (max-width: 767px) {
   .products-section__item:not(:last-child) {
-    margin-bottom: 256px;
+    margin-bottom: 200px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -725,7 +740,7 @@ p {
   }
 }
 .products-section__item--ice {
-  background-color: #FFA5BA;
+  background-color: #FFB8CA;
 }
 .products-section__item--coffee {
   background-color: #F0D1A5;
@@ -762,7 +777,7 @@ p {
   line-height: 23px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #fff;
+  color: #FFFFFF;
 }
 @media screen and (min-width: 1280px) {
   .products-section__type {
@@ -780,12 +795,11 @@ p {
 }
 
 .products-section__text {
-  font-family: DM Sans;
   font-size: 14px;
   font-weight: 700;
   line-height: 22px;
   letter-spacing: 0.04em;
-  color: #fff;
+  color: #FFFFFF;
   margin-bottom: 30px;
 }
 @media screen and (min-width: 1280px) {
@@ -798,7 +812,7 @@ p {
 .products-section__button {
   width: 40px;
   height: 40px;
-  background-color: #fff;
+  background-color: #FFFFFF;
   border-radius: 50%;
   border: 0;
   color: #D41443;
@@ -812,12 +826,6 @@ p {
   padding-bottom: 60px;
 }
 
-.made-container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
 @media screen and (min-width: 320px) {
   .made-container {
     max-width: 320px;
@@ -864,13 +872,17 @@ p {
   }
 }
 
+.text-container {
+  text-align: left;
+  line-height: 19.44px;
+}
 @media screen and (min-width: 768px) {
-  .texxt-container {
+  .text-container {
     width: 340px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .texxt-container {
+  .text-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -879,53 +891,45 @@ p {
   }
 }
 
-.made-section__first-text {
-  font-family: DM Sans;
+.text-container__first {
   font-size: 12px;
-  font-weight: 500;
-  line-height: 19.44px;
-  letter-spacing: 0.04em;
-  text-align: left;
+  font-weight: 700;
   color: #000000;
   margin-bottom: 45px;
 }
 @media screen and (max-width: 767px) {
-  .made-section__first-text {
+  .text-container__first {
     padding-left: 35px;
     padding-right: 35px;
   }
 }
 @media screen and (min-width: 768px) {
-  .made-section__first-text {
+  .text-container__first {
     font-size: 14px;
     line-height: 22.64px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .made-section__first-text {
+  .text-container__first {
     font-size: 16px;
     line-height: 28px;
   }
 }
 
-.made-section__second-text {
-  font-family: DM Sans;
+.text-container__second {
   font-size: 14px;
   font-weight: 500;
-  line-height: 19.44px;
-  letter-spacing: 0.04em;
-  text-align: left;
   color: #907E82;
   margin-bottom: 30px;
 }
 @media screen and (max-width: 767px) {
-  .made-section__second-text {
+  .text-container__second {
     padding-left: 35px;
     padding-right: 35px;
   }
 }
 
-.made-section__second-text span {
+.text-container__second span {
   display: flex;
   margin-top: 10px;
 }
@@ -935,14 +939,16 @@ p {
   color: #D41443;
   border: 0;
   padding: 15px 37px;
+  margin-bottom: 39px;
   border-radius: 22px;
-  font-family: DM Sans;
   font-size: 16px;
   font-weight: 700;
   line-height: 21px;
   letter-spacing: 0em;
   text-align: center;
-  margin-bottom: 39px;
+}
+.made-section__button:hover, .made-section__button:focus {
+  background-color: #ECEBEB;
 }
 
 .made-section__number {
@@ -950,7 +956,6 @@ p {
   font-size: 36px;
   font-weight: 400;
   line-height: 66px;
-  letter-spacing: 0.04em;
   color: #D41443;
   margin-bottom: 13px;
 }
@@ -967,7 +972,6 @@ p {
 }
 
 .made-section__text {
-  font-family: DM Sans;
   font-size: 12px;
   font-weight: 700;
   line-height: 20.4px;
@@ -1009,7 +1013,7 @@ p {
   }
 }
 @media screen and (min-width: 768px) {
-  .made-section__item:not(:last-child):not(:last-child) {
+  .made-section__item:not(:last-child) {
     margin-right: 30px;
   }
 }
@@ -1030,17 +1034,15 @@ p {
   }
 }
 
+.made-section__svg {
+  margin-left: 5px;
+}
+
 .contacts-section {
   background-color: rgb(255, 245, 246);
   padding-bottom: 165px;
 }
 
-.contacts-container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
 @media screen and (max-width: 767px) {
   .contacts-container {
     width: 320px;
@@ -1075,7 +1077,6 @@ p {
   box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
   background-color: #FFFFFF;
   border-radius: 24px;
-  font-family: DM Sans;
   font-size: 12px;
   font-weight: 500;
   line-height: 18px;
@@ -1090,14 +1091,14 @@ p {
   }
 }
 @media screen and (min-width: 768px) {
-  .contacts-section_item {
-    padding: 50px 31px;
-    font-size: 14px;
+  .contacts-section_item:not(:last-child) {
+    margin-right: 20px;
   }
 }
 @media screen and (min-width: 768px) {
-  .contacts-section_item:not(:last-child) {
-    margin-right: 20px;
+  .contacts-section_item {
+    padding: 50px 31px;
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -1109,7 +1110,6 @@ p {
 }
 
 .contacts-title {
-  font-family: DM Sans;
   font-size: 12px;
   font-weight: 500;
   line-height: 22px;
@@ -1180,7 +1180,6 @@ p {
     width: 280px;
   }
 }
-
 .contacts-day__list::before {
   position: absolute;
   content: "";
@@ -1260,13 +1259,12 @@ p {
 }
 
 .contacts__button {
-  font-family: DM Sans;
   font-size: 16px;
   font-weight: 700;
   line-height: 21px;
   letter-spacing: 0em;
   text-align: center;
-  background-color: #D41342;
+  background-color: #D41443;
   border-radius: 22px;
   border: 0px;
   color: #FFFFFF;
@@ -1282,11 +1280,17 @@ p {
     margin-right: 15px;
   }
 }
+.contacts__button-first:hover, .contacts__button-first:focus {
+  background-color: #C7133E;
+}
 
 .contacts__button-second {
   background-color: #FFFFFF;
   color: #D41443;
   padding: 10px 39px;
+}
+.contacts__button-second:hover, .contacts__button-second:focus {
+  background-color: #ECEBEB;
 }
 
 .footer {
@@ -1356,9 +1360,11 @@ p {
     height: 32px;
   }
 }
+.networks-item:hover, .networks-item:focus {
+  background-color: #D41443;
+}
 
 .footer-contact {
-  font-family: DM Sans;
   letter-spacing: 0em;
   font-weight: 700;
   display: flex;
@@ -1385,7 +1391,7 @@ p {
 }
 
 .footer-contact__text {
-  color: #000;
+  color: #000000;
   margin-right: 5px;
 }
 
@@ -1400,7 +1406,6 @@ p {
 }
 
 .footer-copyright {
-  font-family: DM Sans;
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;
@@ -1408,7 +1413,6 @@ p {
   text-align: center;
   color: #907E82;
 }
-
 .footer-copyright::before {
   content: "";
   display: block;

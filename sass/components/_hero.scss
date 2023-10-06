@@ -1,18 +1,18 @@
 .hero{
-   background-color:#FFB8CA;
+   background-color:$primary-background-color;
    overflow: hidden;
 }
 
 .hero-container{
    position: relative;
-      width: 100%;
-         min-width: 320px;
-         padding-left: 20px;
-         padding-right: 20px;
-         margin-left: auto;
-         margin-right: auto;
+   width: 100%;
+   min-width: 320px;
+   padding-left: 20px;
+   padding-right: 20px;
+   margin-left: auto;
+   margin-right: auto;
    @media screen and (min-width: 480px){
-         width: 480px;
+      width: 480px;
    }
    @media screen and (min-width: 768px) {
       width: 768px;
@@ -23,12 +23,9 @@
    }
 }
 
-
 .hero-mob__section{
    display: flex;
 }
-
-
 
 /*first-blok*/
 .first-blok{
@@ -62,8 +59,7 @@
 .first{
    font-size: 26px;
    line-height: 30px;
-   
-   color: #FFFFFF;
+   color: $primary-white-color;
 
    @media screen and (min-width: 767px) {
       line-height: 22px;
@@ -78,7 +74,7 @@
 .second{
    font-size: 48px;
    line-height: 45px;
-   color:#D41443;
+   color:$second-title-color;
    margin-bottom: 20px;
 
    @media screen and (min-width: 767px) {
@@ -92,17 +88,17 @@
    }
 }
 .first-blok__button{
-   font-family: DM Sans;
+   
    font-size: 8px;
    font-weight: 700;
    line-height: 11px;
    letter-spacing: 0em;
    text-align: center;
    
-   background-color: #D41342;
+   background-color: $second-title-color;
    border-radius: 20px;
    border: 0px;
-   color: #FFFFFF;
+   color: $primary-white-color;
    cursor: pointer;
    
    padding: 10px 15px;
@@ -110,10 +106,19 @@
       line-height: 19px;
       font-size: 14px;
    }
+      &:hover,
+      &:focus {
+         background-color: $button-burgundy-color;
+      }
 }
 .first-blok__button-second{
-   background-color: #FFFFFF;
-   color: #D41342;
+   background-color: $primary-white-color;
+   color: $second-title-color;
+
+   &:hover,
+   &:focus{
+      background-color: $button-hover-color;
+   }
 }
 .first-blok__mob{
 @media screen and (max-width: 767px) {
@@ -132,13 +137,13 @@
 
 }
 .first-blok__text {
-   font-family: DM Sans;
+   
    font-size: 8px;
    font-weight: 400;
    line-height: 12px;
    letter-spacing: 0em;
    text-align: left;
-   color: #FFFFFF;
+   color: $primary-white-color;
    margin-bottom: 7px;
  
    @media screen and (min-width: 1280px) {
@@ -154,7 +159,7 @@
 }
 .first-blok__btn{
    @media screen and (min-width: 768px) {
-      background-color: #FFFFFF;
+      background-color: $primary-white-color;
       border-radius: 50%;
       width: 26px;
       height: 26px;
@@ -186,8 +191,8 @@
 .circle{
    position: relative;
    border-radius: 50%;
-   border: solid #ffa5ba;
-      background-color: #ffa5ba;
+   border: solid $first-title-color;
+      background-color: $first-title-color;
    @media screen and (max-width: 767px) {
          width: 346px;
          height: 344px;
@@ -237,7 +242,7 @@
    font-size: 28px;
    font-weight: 400;
    line-height: 32px;
-   color: #D41443;
+   color:$second-title-color;
    z-index: 1;
 
    @media screen and (min-width: 1280px) {
@@ -247,12 +252,12 @@
   
 }
 .third-blok__institution{
-   font-family: DM Sans;
+   
    font-size: 8px;
    font-weight: 400;
    line-height: 10px;
    letter-spacing: 0em;
-   color: #FFFFFF;
+   color: $primary-white-color;
 
    @media screen and (min-width: 1280px) {
       font-size: 14px;
@@ -275,7 +280,7 @@
 content: "";
 position: absolute;
 border-radius: 50%;
-background-color: #FFFFFF;
+background-color: $primary-white-color;
 width: 16px;
 height: 16px;
 top: 10%;

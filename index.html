@@ -32,7 +32,11 @@
           <nav class="site-nav">
             <ul class="site-nav__list">
               <li class="site-nav__item">
-                <a class="site-nav__link" href="index.html">Home</a>
+                <a
+                  class="site-nav__link site-nav__link--active"
+                  href="index.html"
+                  >Home</a
+                >
               </li>
               <li class="site-nav__item">
                 <a class="site-nav__link" href="#">About us</a>
@@ -78,7 +82,11 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et
                   </p>
-                  <button class="first-blok__btn"></button>
+                  <button class="first-blok__btn">
+                    <svg width="5px" height="8px">
+                      <use href="./images/sprite.svg#icon-arrow"></use>
+                    </svg>
+                  </button>
                 </div>
               </div>
             </div>
@@ -177,13 +185,13 @@
                 alt="cow"
                 class="made-section_cow"
               />
-              <div class="texxt-container">
-                <p class="made-section__first-text">
+              <div class="text-container">
+                <p class="text-container__first">
                   Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam
                   vel justo cursus, faucibus lorem eget, egestas eros. Maecenas
                   eleifend erat at justo fringilla.
                 </p>
-                <p class="made-section__second-text">
+                <p class="text-container__second">
                   Curabitur lacinia enim at ex blandit, vel pellentesque odio
                   elementum. Mauris rhoncus orci in imperdiet placerat.
                   Vestibulum euismod nisl suscipit ligula volutpat, a feugiat
@@ -192,8 +200,8 @@
                 </p>
                 <button class="made-section__button">
                   Read more
-                  <svg width="5px" height="8px">
-                    <use></use>
+                  <svg width="5px" height="8px" class="made-section__svg">
+                    <use href="./images/sprite.svg#icon-arrow"></use>
                   </svg>
                 </button>
               </div>
@@ -357,7 +365,7 @@
             <button class="contacts__button contacts__button-first">
               Our Locations
               <svg width="5px" height="8px" class="contacts-section__svg">
-                <use href="./images/sprite.svg#icon-arrow "></use>
+                <use href="./images/sprite.svg#icon-Vector-1"></use>
               </svg>
             </button>
             <button class="contacts__button contacts__button-second">
