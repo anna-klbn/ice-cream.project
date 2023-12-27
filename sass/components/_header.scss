@@ -11,7 +11,7 @@
     margin-left: auto;
     margin-right: auto;
     @media screen and (max-width:767px) {
-        width: 320px;;
+        width: 320px;
         padding-left: 20px;
         padding-right: 20px;
         justify-content: space-between;
@@ -26,87 +26,11 @@
         justify-content: space-around;
         }
 }
-// .menu-svg{
-    
-// }
+
 .header-button__svg{
     margin-left: 10px;
 }
 
-.menu-container {
-    z-index: 3;
-    @media screen and (max-width:767px) {
-        position: fixed;
-        width: 100%;
-        top: 0%;
-        left: 0%;
-        height: 100vh;
-       
-        background-color: $menu-background-color;
-        padding: 55px 24px 20px 24px;
-            
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: flex-end;
-        
-    }
-    @media screen and (max-width:1279px) {
-        position: fixed;
-       
-        right: 0%;
-        padding: 55px 24px 20px 24px;
-        background-color: $menu-background-color;
-        top: 0%;
-        height: 100vh;
-
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: flex-end;
-    }
-  
-    @media screen and (min-width:1280px) {
-        display: flex;
-        align-items: center;
-    }
-}
-
-.button-menu {
-    z-index: 4;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    padding: 0;
-    background-color: transparent;
-    border: none;
-
-    @media screen and (min-width:768px) {
-        margin-left:162px ;
-    }
-    @media screen and (min-width:1280px) {
-        display: none;
-    }
-}
-
-.button-menu .icon-close {
-    display: none;
-}
-
-.button-menu.is-open .icon-close {
-    display: block;
-}
-
-.button-menu.is-open .icon-menu {
-    display: none;
-}
-.menu-container.is-open {
-    display: flex;
-}
-.button-menu.is-open {
-    position: absolute;
-    z-index: 5;
-    top: 25px;
-    right: 15px;
-}
 .header-button{
     padding:10px 37px;
     border: 0;
@@ -120,19 +44,15 @@
     background-color: $primary-white-color;
     color:$second-title-color;
     
-    @media screen and (max-width:767px) {
-        margin-top: 10px;
-        margin-bottom: 32px;
-
+    @media screen and (max-width:1278px) {
+       margin-top: 10px;
     }
-    @media screen and (max-width:1279px) {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    
-        }
+   
     @media screen and (min-width:1280px) {
         margin-left: 110px;
+        z-index: 10;
     }
+
     &:hover,
     &:focus {
         background-color: $button-hover-color ;
@@ -146,6 +66,7 @@
     @media screen and (min-width:768px) {
         font-size: 14px;
         line-height: 18px;
+       
     }
     @media screen and (min-width:1280px) {
         display: flex;
@@ -155,6 +76,8 @@
         line-height: 21px;
     }
 }
+       
+
 .site-nav__item{
     &:not(:last-child){
         @media screen and (min-width:1280px) {
@@ -181,3 +104,72 @@
     }
 }
    
+.menu-button{
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    z-index: 4;
+    cursor: pointer;
+
+    @media screen and (min-width:768px) {
+        margin-left: 200px;
+    }
+
+    @media screen and (min-width:1280px) {
+        display: none;
+    }
+    &.is-open {
+        position: absolute;
+        z-index: 5;
+        top: 25px;
+        right: 15px;
+    }
+}
+.menu-button .icon-close{
+    display: none;
+}
+
+.menu-button.is-open .icon-close{
+    display: block;
+}
+.menu-button.is-open .icon-menu{
+    display: none;
+}
+.menu-container{
+    display: none;
+    z-index: 3;
+    
+
+    @media screen and (max-width:767px) {
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        height: 100vh;
+
+        background-color: $menu-background-color;
+        padding: 55px 24px 20px 24px;
+        width: 100%;
+        text-align: center;
+    }
+
+    @media screen and (max-width:1279px) {
+        position: fixed;
+        right: 0%;
+        padding: 55px 24px 20px 24px;
+        background-color: $menu-background-color;
+        top: 0%;
+        height: 100vh;
+        text-align: center;
+    }
+
+    @media screen and (min-width:1280px) {
+        display: flex;
+        align-items: center;
+    }
+    &.is-open{
+        display:block ;
+    }
+}
+

@@ -235,7 +235,9 @@
 .first-blok__item{
    position: relative;
 }
-
+.third-blok__item:not(:last-child){
+   margin-bottom: 10px;
+}
 .third-blok__number{
    position: relative;
    font-family: Titan One;
@@ -283,14 +285,13 @@ border-radius: 50%;
 background-color: $primary-white-color;
 width: 16px;
 height: 16px;
-top: 10%;
-right: 3%;;
+right: 2%;
 
 @media screen and (min-width: 1280px) {
    width: 30px;
    height: 30px;
    right: 1%;
-   top:17%;
+   
    }
 }
 
